@@ -1,4 +1,4 @@
-class WelcomeController < ApplicationController
+class AboutController < ApplicationController
   def index
   end
 
@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
   def faculty
   end
 
-  def bod
+  def board
   end
 
   def donors
