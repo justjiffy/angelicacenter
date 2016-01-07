@@ -4,6 +4,7 @@ class ProgramsController < ApplicationController
   end
 
   def classes
+    @date = "Insert Timestamp"
   end
 
   def schedule
