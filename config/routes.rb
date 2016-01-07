@@ -13,14 +13,14 @@ Rails.application.routes.draw do
 
   # PROGRAMS
   get 'programs' => 'programs#index'
-  get 'classes' => 'programs#class', as: :class
+  get 'classes' => 'programs#classes', as: :class
   get 'schedule' => 'programs#schedule', as: :schedule
   get 'events' => 'programs#events', as: :events
 
   # MEDIA
   get 'media' => 'media#index'
-  get 'photos' => 'media#photo', as: :photo
-  get 'video' => 'media#video', as: :video
+  get 'photos' => 'media#photos', as: :photo
+  get 'video' => 'media#videos', as: :video
   get 'other' => 'media#other', as: :other
 
   # NEWS

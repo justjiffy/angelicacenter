@@ -21,12 +21,15 @@
 </head>
 
 <body>
-  <div class="container">
-    <%= render 'layouts/navbar' %>
-  </div>
+  <%= render 'layouts/navbar' %>
 
   <div class="container" style="display: block;">
     <%= yield %>
+
+    <footer>
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2016 Angelica Center for Music, a 501(c)3 non-profit organization &middot;</p>
+    </footer>
   </div>
 
   <!-- Bootstrap JS -->
