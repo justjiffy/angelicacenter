@@ -1,15 +1,37 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
-
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  # ABOUT US
+  get 'about' => 'welcome#index'
+  get 'mission' => 'welcome#mission', as: :mission
+  get 'origin' => 'welcome#origin', as: :origin
+  get 'faculty' => 'welcome#faculty', as: :faculty
+  get 'board' => 'welcome#bod', as: :board
+  get 'donors' => 'welcome#donors', as: :donors
+  get 'accomplishments' => 'welcome#accomplishments', as: :accomplishments
+  get 'strategy' => 'welcome#strategy', as: :strategy
 
+
+  # PROGRAMS
+  get 'programs' => 'programs#index'
+  get 'classes' => 'programs#class', as: :class
+  get 'schedule' => 'programs#schedule', as: :schedule
+  get 'events' => 'programs#events', as: :events
+
+  # MEDIA
+  get 'media' => 'media#index'
+  get 'photos' => 'media#photo', as: :photo
+  get 'video' => 'media#video', as: :video
+  get 'other' => 'media#other', as: :other
+
+  # NEWS
+  get 'newsletter' => 'news#index', as: :news
+  get 'calendar' => 'programs#events', as: :calendar
+
+  # CONTACT
+  get 'contact' => 'contact#index'
+  get 'address' => 'contact#address', as: :address
+  get 'email' => 'contact#email', as: :email
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
