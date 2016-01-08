@@ -17,3 +17,18 @@
  body {
   padding-top: 25px;
  }
+
+ .green {
+  color: white;
+  background-color: green;
+}
+
+.blue {
+  color: white;
+  background-color: blue;
+}
+
+.purple {
+  color: white;
+  background-color: purple;
+}
