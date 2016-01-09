@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :events
   root 'about#index'
 
   # ABOUT US
@@ -15,7 +17,7 @@ Rails.application.routes.draw do
   get 'programs' => 'programs#index'
   get 'classes' => 'programs#classes', as: :class
   get 'schedule' => 'programs#schedule', as: :schedule
-  get 'events' => 'programs#events', as: :events
+  get 'events' => 'events#index'
 
   # MEDIA
   get 'media' => 'media#index'
@@ -31,4 +33,13 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#index'
   get 'address' => 'contact#address', as: :address
   get 'email' => 'contact#email', as: :email
+
+  #ADMIN PANEL
+  devise_scope :user do
+    get "/admin" => "devise/sessions#new"
+  end
+
 end
+
+
+

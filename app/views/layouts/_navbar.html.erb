@@ -10,9 +10,14 @@
                <span class="icon-bar"></span>
              </button>
            </div>
-             <%= link_to image_tag("logo_sm.png", class: "pull-left", style: "position: fixed; top: 0; left: 0"), root_path %>
+             <%= link_to image_tag("logo.png", class: "pull-left", style: "position: fixed; top: -10px; left: -25px; width: 200px;"), root_path %>
            <div id="navbar" class="navbar-collapse collapse" style="margin-left: 100px;">
              <ul class="nav navbar-nav">
+
+              <!-- IF LOGGED IN -->
+              <% if user_signed_in? %>
+               <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: "pull-right" %></li>
+              <% end %>
 
               <!-- ABOUT US -->
                <li class="dropdown">

@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <h1>Upcoming Event</h1>
+</div>
+
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.schedule %>, <%= @event.schedule.time.strftime("%I:%M %p") %>
+</p>
+
+<%= link_to ('<span class="glyphicon glyphicon-circle-arrow-left"></span>').html_safe, events_path %>
+<% if @event.schedule.count > 2 %>
+  <%= render link_to('Edit', edit_event_path(@event)) %>
+<% end %>

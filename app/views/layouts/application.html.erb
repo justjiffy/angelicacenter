@@ -24,16 +24,21 @@
   <%= render 'layouts/navbar' %>
 
   <div class="container" style="display: block;">
+    <div style="position: fixed; top: 50px; width: 100%; text-align: center; background-color: white;">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
     <%= yield %>
-
-    <footer style="position: fixed; bottom: 0; right:0; width:100%; padding: 10px 5%; background: black; color: white">
-      <p><small>Angelica Center for Music, a 501(c)3 non-profit organization
-        &middot; 1345 S. Burlington, Los Angeles, CA
-        &middot; Tel: 626-230-6696
-        &middot; admin@acamcenter.org </small>
-      </p>
-    </footer>
   </div>
+
+  <footer style="width:100%; padding: 10px 5%; background: black; color: white">
+      <div class="container"><h6>
+      Angelica Center for Music, a 501(c)3 non-profit organization
+      &middot; 1345 S. Burlington, Lo s Angeles, CA
+      &middot; Tel: 626-230-6696
+      &middot; admin@acamcenter.org</h6>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
