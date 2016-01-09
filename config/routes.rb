@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: "registrations" }
   resources :events
   root 'about#index'
 
@@ -37,6 +37,7 @@ Rails.application.routes.draw do
   #ADMIN PANEL
   devise_scope :user do
     get "/admin" => "devise/sessions#new"
+    get "/admin/thanks" => "registrations#thanks"
   end
 
 end
