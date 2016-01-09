@@ -46,3 +46,10 @@ group :development do
   gem 'spring'
 end
 
+#for calendar/recurring events
+gem 'ice_cube'
+gem 'schedulable'
+
+#login
+gem 'devise'
+
