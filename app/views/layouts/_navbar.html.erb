@@ -1,6 +1,6 @@
 <div class="navbar-wrapper">
        <nav class="navbar navbar-inverse navbar-static-top">
-         <div class="container" style="float: right; padding-right: 25px;">
+         <div class="container">
            <div class="navbar-header">
              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                <span class="sr-only">Toggle navigation</span>
@@ -9,14 +9,14 @@
                <span class="icon-bar"></span>
              </button>
            </div>
-             <%= link_to image_tag("logo.png", class: "pull-left", style: "position: fixed; top: -10px; left: -25px; width: 200px;"), root_path %>
-           <div id="navbar" class="navbar-collapse collapse">
-             <ul class="nav navbar-nav">
+             <%= link_to image_tag("logo.png", style: "position: fixed; top: -10px; left: -50px; width: 200px; z-index: 10000"), root_path %>
+           <div id="navbar" class="navbar-collapse collapse" style="padding-left: 15%">
+             <ul class="nav navbar-nav nav-pad">
 
               <!-- ABOUT -->
-               <li class="dropdown">
+               <li class="dropdown" style="text-align: center">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                 <ul class="dropdown-menu" style="text-align: right; overflow: display">
+                 <ul class="dropdown-menu">
                    <li><%= link_to "Mission & Vision", mission_path %></li>
                    <li><%= link_to "Origin", origin_path %></li>
                    <li><%= link_to "Faculty", faculty_path %></li>
@@ -28,7 +28,7 @@
                </li>
 
                <!-- PROGRAMS -->
-               <li class="dropdown">
+               <li class="dropdown" style="text-align: center">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programs</a>
                  <ul class="dropdown-menu">
                    <li><%= link_to "Classes", class_path %></li>
@@ -38,7 +38,7 @@
                </li>
 
                <!-- MEDIA -->
-               <li class="dropdown">
+               <li class="dropdown" style="text-align: center">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media</a>
                  <ul class="dropdown-menu">
                    <li><%= link_to "Photos", photo_path %></li>
@@ -48,7 +48,7 @@
                </li>
 
                <!-- NEWS -->
-               <li class="dropdown">
+               <li class="dropdown" style="text-align: center">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News</a>
                  <ul class="dropdown-menu">
                    <li><%= link_to "Newsletter", news_path %></li>
@@ -57,7 +57,7 @@
                </li>
 
                <!-- CONTACT -->
-               <li class="dropdown">
+               <li class="dropdown" style="text-align: center">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
                  <ul class="dropdown-menu">
                   <li><%= link_to "In Person", address_path %></li>
