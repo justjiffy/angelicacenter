@@ -24,10 +24,11 @@
   <%= render 'layouts/navbar' %>
 
   <div class="container" style="display: block;">
-    <div style="position: fixed; top: 50px; width: 100%; text-align: center; background-color: white;">
+    <div style="position: fixed; top: 50px; width: 100%; text-align: center; background-color: transparent;">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
     </div>
+
     <%= yield %>
   </div>
 
