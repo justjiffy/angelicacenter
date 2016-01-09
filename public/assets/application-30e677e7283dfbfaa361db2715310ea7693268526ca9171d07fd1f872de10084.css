@@ -162,50 +162,40 @@ body {
 
 /* line 9, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-/* line 15, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 14, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-/* line 21, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 20, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 a {
   color: #000;
 }
-/* line 24, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
-a:visited {
-  color: #666;
-}
-/* line 28, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
-a:hover {
-  color: #fff;
-  background-color: #000;
-}
 
-/* line 35, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 25, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 40, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 30, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 #notice {
   color: green;
 }
 
-/* line 44, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 34, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 50, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 40, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -214,7 +204,7 @@ div.field, div.actions {
   margin-bottom: 20px;
   background-color: #f0f0f0;
 }
-/* line 58, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 48, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -225,7 +215,7 @@ div.field, div.actions {
   background-color: #c00;
   color: #fff;
 }
-/* line 69, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
+/* line 59, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/scaffolds.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
@@ -249,12 +239,59 @@ div.field, div.actions {
 
  body {
   padding-top: 40px;
+  padding-bottom: 0;
+  margin: 0;
+ font-family: 'Coming Soon', cursive;
  }
 
-a:hover {
-  background-color: transparent;
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ .h1,
+ .h2,
+ .h3,
+ .h4,
+ .h5,
+ .h6,
+ a,
+ li {
+  font-family: 'Patrick Hand SC', cursive;
+  text-transform: uppercase;
 }
 
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li>a:visited,
+footer a,
+footer a:visited {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:active,
+footer a:hover,
+footer a:active  {
+  color: #ffe493;
+}
+
+.panel-heading {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.panel-title{
+  font-size: 26px;
+}
+.dropdown-menu>li>a:hover {
+  background-color: #ffe493;
+}
+
+.jumbotron {
+  background-color: #E3F8FD;
+  border-radius: 5px;
+}
  .green {
   color: white;
   background-color: green;
