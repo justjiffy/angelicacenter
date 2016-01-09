@@ -40,12 +40,16 @@
 }
 
 .navbar-inverse .navbar-nav>li>a,
-.navbar-inverse .navbar-nav>li>a:visited {
+.navbar-inverse .navbar-nav>li>a:visited,
+footer a,
+footer a:visited {
   color: #fff;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:active {
+.navbar-inverse .navbar-nav>li>a:active,
+footer a:hover,
+footer a:active  {
   color: #ffe493;
 }
 
@@ -63,6 +67,7 @@
 
 .jumbotron {
   background-color: #E3F8FD;
+  border-radius: 5px;
 }
  .green {
   color: white;
