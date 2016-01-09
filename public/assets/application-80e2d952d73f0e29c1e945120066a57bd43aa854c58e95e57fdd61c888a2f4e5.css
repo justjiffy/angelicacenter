@@ -1,0 +1,195 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+/* line 6, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* line 11, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+#item1 {
+  background-image: url("/assets/carousel1-820645261c8462f476e717267b586b76a2ad6d21075dc8970087cf63d44d061f.jpg");
+  background-size: cover;
+}
+
+/* line 16, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+#item2 {
+  background-image: url("/assets/carousel2-547e7a3649f7c8fb296fe016d7c72eb99fb6407e5313e31acbafd464d6ed065e.jpg");
+  background-size: cover;
+}
+
+/* line 21, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+#item3 {
+  background-image: url("/assets/carousel3-931fa3178e4584f5dda4f766c55875a7d1f57c3940fca7ce4ee41db2b7a0a770.jpg");
+  background-size: cover;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 31, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+* {
+  font-size: 20px;
+}
+
+/* line 35, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+/* line 44, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 48, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 52, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+/* line 61, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+/* line 66, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.carousel-caption {
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 73, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+/* Featurettes
+------------------------- */
+/* line 81, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.featurette-divider {
+  margin: 30px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* line 86, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  /* line 98, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+
+  /* line 101, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /* line 105, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  /* line 111, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  /* line 116, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .carousel-caption p {
+    padding-top: 25px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+    font-style: italic;
+  }
+
+  /* line 124, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  /* line 128, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .nav-spacing {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 134, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+ body {
+  padding-top: 25px;
+ }
+
+ .green {
+  color: white;
+  background-color: green;
+}
+
+.blue {
+  color: white;
+  background-color: blue;
+}
+
+.purple {
+  color: white;
+  background-color: purple;
+}
+
+.nav-spacing {
+  margin-left: 150px;
+}
+
