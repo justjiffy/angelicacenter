@@ -15,10 +15,10 @@
  */
 
  body {
-  padding-top: 40px;
-  padding-bottom: 0;
-  margin: 0;
- font-family: 'Coming Soon', cursive;
+   font-family: 'Coming Soon', cursive;
+   padding-top: 40px;
+   padding-bottom: 0;
+   margin-bottom: 0;
  }
 
  h1,
@@ -61,6 +61,7 @@ footer a:active  {
 .panel-title{
   font-size: 26px;
 }
+
 .dropdown-menu>li>a:hover {
   background-color: #ffe493;
 }

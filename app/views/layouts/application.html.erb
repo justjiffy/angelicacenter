@@ -31,31 +31,22 @@
 <body>
   <%= render 'layouts/navbar' %>
 
-  <div class="container" style="display: block;">
-    <div style="position: fixed; top: 50px; width: 100%; text-align: center; background-color: transparent;">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    </div>
-
     <%= yield %>
 
-    <footer class="container" style="height: 180px; background: black; color: white; padding-top: 80px;">
-      <address>
-        <p class="pull-right">
-          <a href="https://www.facebook.com/Angelica-Center-for-Arts-and-Music-110467198993372/timeline" target="_blank"><i class="fa fa-3x fa-facebook-official"></i></a>
-        </p>
-        <p style="font-size: 14px">
-        Angelica Center for Arts and Music<br>
-        a 501(c)3 non-profit organization<br>
-        1345 S. Burlington<br>
-        Los Angeles, CA<br>
-        P: (626)230-6696
-        </p>
-      </address>
-    </footer>
-
-  </div>
-
+  <footer style="height: 180px; background: black; color: white; padding: 80px 15px 15px 15px">
+    <address>
+      <p class="pull-right">
+        <a href="https://www.facebook.com/Angelica-Center-for-Arts-and-Music-110467198993372/timeline" target="_blank"><i class="fa fa-3x fa-facebook-official"></i></a>
+      </p>
+      <p style="font-size: 14px">
+      Angelica Center for Arts and Music<br>
+      a 501(c)3 non-profit organization<br>
+      1345 S. Burlington<br>
+      Los Angeles, CA<br>
+      P: (626)230-6696
+      </p>
+    </address>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

@@ -1,7 +1,6 @@
 <div class="navbar-wrapper">
-     <div class="container">
        <nav class="navbar navbar-inverse navbar-static-top">
-         <div class="container" style="position: relative">
+         <div class="container" style="float: right; padding-right: 25px;">
            <div class="navbar-header">
              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                <span class="sr-only">Toggle navigation</span>
@@ -11,14 +10,13 @@
              </button>
            </div>
              <%= link_to image_tag("logo.png", class: "pull-left", style: "position: fixed; top: -10px; left: -25px; width: 200px;"), root_path %>
-           <div id="navbar" class="navbar-collapse collapse" style="margin-left: 100px;">
+           <div id="navbar" class="navbar-collapse collapse">
              <ul class="nav navbar-nav">
-
 
               <!-- ABOUT -->
                <li class="dropdown">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                 <ul class="dropdown-menu">
+                 <ul class="dropdown-menu" style="text-align: right; overflow: display">
                    <li><%= link_to "Mission & Vision", mission_path %></li>
                    <li><%= link_to "Origin", origin_path %></li>
                    <li><%= link_to "Faculty", faculty_path %></li>
@@ -74,5 +72,4 @@
            </div>
          </div>
        </nav>
-     </div>
    </div>
