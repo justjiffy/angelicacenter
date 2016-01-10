@@ -25,7 +25,8 @@ p {
   font-size: 16px;
 }
 
-.mission {
+.mission,
+.origin {
     img {
       width: 500px;
       margin: 15px;
@@ -115,4 +116,20 @@ footer a:active  {
 .purple {
   color: white;
   background-color: purple;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 568px) {
+  .mission,
+  .origin {
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 0 auto;
+      }
+  }
 }
