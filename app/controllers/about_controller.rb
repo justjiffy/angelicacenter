@@ -1,6 +1,7 @@
 class AboutController < ApplicationController
   def index
     @events = Event.all
+    @posts = Post.all
   end
 
   def mission
