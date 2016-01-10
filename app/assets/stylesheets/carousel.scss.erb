@@ -1,12 +1,3 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
-
 #item1 {
   background-image: url('<%= asset_path("carousel1.jpg") %>');
   background-size: cover;
@@ -57,9 +48,13 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
+.border-radius {
+  border-radius: 15px;
+}
+
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -69,7 +64,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #fff;
 }
 
 /* Featurettes

@@ -21,6 +21,38 @@
    margin-bottom: 0;
  }
 
+p {
+  font-size: 16px;
+}
+
+.mission {
+    img {
+      width: 500px;
+      margin: 15px;
+      border-radius: 15px;
+    }
+
+    li {
+    font-family: 'Coming Soon', cursive;
+    text-transform: none;
+    padding-bottom: 10px;
+    line-height: 22px
+
+  }
+
+    li:before {
+    content: "\2605";
+    font-size: 14px;
+    margin-left: -25px;
+    padding-left: 35px;
+    padding-right: 8px;
+  }
+
+   ul {
+    list-style: none;
+  }
+}
+
  h1,
  h2,
  h3,
@@ -68,7 +100,7 @@ footer a:active  {
 
 .jumbotron {
   background-color: #E3F8FD;
-  border-radius: 5px;
+  border-radius: 15px;
 }
  .green {
   color: white;

@@ -53,3 +53,6 @@ gem 'schedulable'
 #login
 gem 'devise'
 
+#for S3 storage
+gem 'aws-sdk', '~> 2'
+
