@@ -13,6 +13,11 @@
            <div id="navbar" class="navbar-collapse collapse" style="padding-left: 15%">
              <ul class="nav navbar-nav nav-pad">
 
+              <!-- IF LOGGED IN -->
+              <% if user_signed_in? %>
+               <li style="position: absolute; right: 25px; z-index: 10000"><%= link_to ('<span class="glyphicon glyphicon-log-out"></span>').html_safe, destroy_user_session_path, :method => :delete %></li>
+              <% end %>
+
               <!-- ABOUT -->
                <li class="dropdown" style="text-align: center">
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
@@ -64,10 +69,6 @@
                   <li><%= link_to "Online", email_path %></li>
                  </ul>
                </li>
-              <!-- IF LOGGED IN -->
-              <% if user_signed_in? %>
-               <li><%= link_to ('<span class="glyphicon glyphicon-log-out"></span>').html_safe, destroy_user_session_path, :method => :delete, class: "pull-right" %></li>
-              <% end %>
              </ul>
            </div>
          </div>
