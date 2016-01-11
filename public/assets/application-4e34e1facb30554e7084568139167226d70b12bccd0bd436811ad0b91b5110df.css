@@ -312,10 +312,11 @@ body {
 
 /* line 25, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 p {
+  font-family: 'Coming Soon', cursive;
   font-size: 16px;
 }
 
-/* line 29, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 30, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 h1,
 h2,
 h3,
@@ -334,7 +335,7 @@ li {
   text-transform: uppercase;
 }
 
-/* line 47, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 48, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .navbar-inverse .navbar-nav > li > a,
 .navbar-inverse .navbar-nav > li > a:visited,
 footer a,
@@ -342,7 +343,7 @@ footer a:visited {
   color: #fff;
 }
 
-/* line 54, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 55, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:active,
 footer a:hover,
@@ -350,23 +351,23 @@ footer a:active {
   color: #ffe493;
 }
 
-/* line 61, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 62, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .panel-heading {
   text-align: center;
   border-radius: 5px;
 }
 
-/* line 66, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 67, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .panel-title {
   font-size: 26px;
 }
 
-/* line 70, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 71, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .dropdown-menu > li > a:hover {
   background-color: #ffe493;
 }
 
-/* line 74, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 75, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .jumbotron {
   background-color: #E3F8FD;
   border-radius: 15px;
