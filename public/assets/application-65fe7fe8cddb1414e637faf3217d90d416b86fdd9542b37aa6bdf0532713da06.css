@@ -164,31 +164,31 @@
 -------------------------------------------------- */
 @media (min-width: 768px) {
   /* Navbar positioning foo */
-  /* line 90, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 89, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .navbar-wrapper {
     margin-top: 20px;
   }
 
-  /* line 93, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 92, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  /* line 97, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 96, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
-  /* line 103, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 102, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
 
   /* Bump up size of carousel content */
-  /* line 108, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 107, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .carousel-caption p {
     padding-top: 25px;
     margin-bottom: 20px;
@@ -197,20 +197,20 @@
     font-style: italic;
   }
 
-  /* line 116, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 115, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .featurette-heading {
     font-size: 50px;
   }
 
-  /* line 120, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 119, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .nav-spacing {
     margin-left: 50px;
   }
 }
 @media (min-width: 992px) {
-  /* line 126, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
+  /* line 125, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/carousel.scss.erb */
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 0;
   }
 }
 /*

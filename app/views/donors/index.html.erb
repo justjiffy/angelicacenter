@@ -8,15 +8,15 @@
   <% @donors.each do |d| %>
     <div class="col-sm-6" style="padding-bottom: 10px;">
       <% if d.img != nil %>
-        <%= image_tag(d.img) %>
+        <%= image_tag(d.img, class: "img-responsive") %>
       <% else %>
         <%= d.name %>
       <% end %>
     </div>
   <% end %>
 
-<% if user_signed_in? %>
-  <%= link_to 'New Donor', new_donor_path %>
-<% end %>
+  <% if user_signed_in? %>
+    <%= link_to 'New Donor', new_donor_path %>
+  <% end %>
 
 </div>
