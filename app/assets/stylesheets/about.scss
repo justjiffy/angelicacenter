@@ -1,0 +1,59 @@
+.mission,
+.origin {
+  img {
+    width: 500px;
+    margin: 15px;
+    border-radius: 15px;
+  }
+
+  li {
+    font-family: 'Coming Soon', cursive;
+    text-transform: none;
+    padding-bottom: 10px;
+    line-height: 22px
+  }
+
+  li:before {
+    content: "\2605";
+    font-size: 14px;
+    margin-left: -25px;
+    padding-left: 35px;
+    padding-right: 8px;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.green {
+  color: white;
+  background-color: green;
+}
+
+.blue {
+  color: white;
+  background-color: blue;
+}
+
+.purple {
+  color: white;
+  background-color: purple;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 568px) {
+  .mission,
+  .origin {
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 0 auto;
+
+      }
+  }
+}

@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
-  resources :posts
-  devise_for :users, controllers: { registrations: "registrations" }
-  resources :events
+  resources :boards, path: :board
+  resources :faculties, path: :faculty
   root 'about#index'
+
+  devise_for :users, controllers: { registrations: "registrations" }
+  resources :posts
+  resources :events
 
   # ABOUT US
   get 'about' => 'about#index'
   get 'mission' => 'about#mission', as: :mission
   get 'origin' => 'about#origin', as: :origin
-  get 'faculty' => 'about#faculty', as: :faculty
-  get 'board' => 'about#board', as: :board
   get 'donors' => 'about#donors', as: :donors
   get 'accomplishments' => 'about#accomplishments', as: :accomplishments
   get 'strategy' => 'about#strategy', as: :strategy

@@ -1,0 +1,33 @@
+<div class="jumbotron">
+  <h1>Our Faculty</h1>
+</div>
+
+<table class="table">
+<p id="notice"><%= notice %></p>
+    <% @faculties.each do |faculty| %>
+
+    <tr>
+      <div class="col-sm-3">
+        <%= image_tag(faculty.img, class: 'img-rounded img-responsive') %>
+     </div>
+
+      <div class="col-sm-9">
+          <h2><%= faculty.first_name %> <%= faculty.last_name %></h2>
+          <p><%= faculty.bio %></p>
+
+          <!-- ADMIN FUNCTIONS -->
+          <% if user_signed_in? %>
+            <p><%= link_to 'New Faculty', new_faculty_path %></p>
+            <p>
+              <%= link_to 'Show', faculty %>
+              <%= link_to 'Edit', edit_faculty_path(faculty) %>
+              <%= link_to 'Destroy', faculty, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </p>
+          <% end %>
+          <!-- - - - - - - - -->
+      </div>
+    <% end %>
+    </tr>
+  </table>
+</div>
+

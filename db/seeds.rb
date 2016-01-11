@@ -16,3 +16,11 @@ Event.create([
   {name: "Performance"},
   {name: "Event"}
   ])
+
+Faculty.create({
+  first_name: "Ellen",
+  last_name: "Sell",
+  bio: "Insert biography here",
+  img: "https://scontent-lax3-1.xx.fbcdn.net/hphotos-xlt1/v/t1.0-9/11951821_10153550276414717_2046422993684837803_n.jpg?oh=fff94c2d0a63ea032074debe184de5b5&oe=570D4EC5",
+  active: true,
+  })
