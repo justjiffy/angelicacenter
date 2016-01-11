@@ -1,20 +1,23 @@
-/* line 3, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 4, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .mission img,
+.board img,
 .origin img {
   width: 500px;
   margin: 15px;
   border-radius: 15px;
 }
-/* line 9, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 10, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .mission li,
+.board li,
 .origin li {
   font-family: 'Coming Soon', cursive;
   text-transform: none;
   padding-bottom: 10px;
   line-height: 22px;
 }
-/* line 16, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 17, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .mission li:before,
+.board li:before,
 .origin li:before {
   content: "\2605";
   font-size: 14px;
@@ -22,25 +25,26 @@
   padding-left: 35px;
   padding-right: 8px;
 }
-/* line 24, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 25, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .mission ul,
+.board ul,
 .origin ul {
   list-style: none;
 }
 
-/* line 29, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 30, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .green {
   color: white;
   background-color: green;
 }
 
-/* line 34, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 35, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .blue {
   color: white;
   background-color: blue;
 }
 
-/* line 39, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 40, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .purple {
   color: white;
   background-color: purple;
@@ -48,9 +52,10 @@
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (max-width: 568px) {
-  /* line 50, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+@media (max-width: 768px) {
+  /* line 53, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
   .mission img,
+  .board img,
   .origin img {
     width: 100%;
     display: block;

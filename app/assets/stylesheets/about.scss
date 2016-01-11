@@ -1,4 +1,5 @@
 .mission,
+.board,
 .origin {
   img {
     width: 500px;
@@ -44,8 +45,10 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
+
   .mission,
+  .board,
   .origin {
       img {
         width: 100%;
@@ -53,7 +56,7 @@
         border-radius: 15px;
         padding: 10px;
         margin: 0 auto;
-
       }
   }
+
 }
