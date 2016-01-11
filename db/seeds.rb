@@ -31,3 +31,9 @@ Board.create({
   title: "President",
   active: true
   })
+
+Donor.create([
+  { name: "Angelica Lutheran Church" },
+  { name: "Angelica Center Parents Group" },
+  { name: "Weingart", img: "http://www.lahealthaction.org/images/Weingart-2c-Small.png" }
+  ])

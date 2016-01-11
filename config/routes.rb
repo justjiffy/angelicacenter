@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :donors, path: :donor
   resources :boards, path: :board
   resources :faculties, path: :faculty
   root 'about#index'
@@ -11,7 +12,6 @@ Rails.application.routes.draw do
   get 'about' => 'about#index'
   get 'mission' => 'about#mission', as: :mission
   get 'origin' => 'about#origin', as: :origin
-  get 'donors' => 'about#donors', as: :donors
   get 'accomplishments' => 'about#accomplishments', as: :accomplishments
   get 'strategy' => 'about#strategy', as: :strategy
 
