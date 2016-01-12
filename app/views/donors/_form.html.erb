@@ -11,19 +11,30 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+<div style="padding: 0 25px 50px 25px;">
+  <div class="form-group row">
+    <%= f.label :name, "Name: ", class: "col-sm-2 form-control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :img %><br>
-    <%= f.text_field :img %>
+  <div class="form-group row">
+    <%= f.label :img, "Logo/Image URL (http://...): ", class: "col-sm-2 form-control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :img, class: "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :major %><br>
-    <%= f.check_box :major %>
+  <div class="form-group row">
+    <%= f.label :major, "Over $5,000?", class: "col-sm-2 form-control-label" %>
+    <div class="col-sm-10">
+      <%= f.check_box :major, class: "checkbox" %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-grou row actions">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit "Add Donor", class: "btn btn-md btn-success" %>
+      <%= link_to ('<button class="btn btn-md btn-danger">CANCEL</button>').html_safe, donors_path %>
+    </div>
   </div>
+</div>
 <% end %>

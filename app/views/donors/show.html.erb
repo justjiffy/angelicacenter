@@ -1,19 +1,31 @@
+<div class="jumbotron">
+  <h1><%= @donor.name %></h1>
+</div>
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @donor.name %>
+  <strong>Image:</strong>
+  <% if @donor.img != "" %>
+    <%= @donor.img %>
+    <% else %>
+    <%= "No Image Linked" %>
+    <% end %>
 </p>
 
 <p>
-  <strong>Img:</strong>
-  <%= @donor.img %>
+  <strong>Major Donor (Over $5,000):</strong>
+  <% if @donor.major = true %>
+    <%= "YES!" %>
+    <% else %>
+    <%= "Not yet..." %>
+    <% end %>
 </p>
 
-<p>
-  <strong>Major:</strong>
-  <%= @donor.major %>
-</p>
+<% if user_signed_in? %>
+  <%= link_to ('<span class="glyphicon glyphicon-pencil"></span>').html_safe, edit_donor_path(@donor) %> |
+  <%= link_to ('<span class="glyphicon glyphicon-trash"></span>').html_safe, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
 
-<%= link_to 'Edit', edit_donor_path(@donor) %> |
-<%= link_to 'Back', donors_path %>
+<br><br>
+<%= link_to ('<span class="glyphicon glyphicon-arrow-left"></span>').html_safe, donors_path %>

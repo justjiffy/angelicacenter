@@ -44,6 +44,9 @@ li {
   text-transform: uppercase;
 }
 
+.field {
+  padding-bottom: 25px;
+}
 footer p {
   font-size: 12px;
   line-height: 18px;
@@ -79,4 +82,5 @@ footer a:active  {
 .jumbotron {
   background-color: #E3F8FD;
   border-radius: 15px;
+  text-shadow: 2px 2px 30px #468ba3
 }

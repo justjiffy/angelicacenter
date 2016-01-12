@@ -1,6 +1,7 @@
 .mission,
 .board,
-.origin {
+.origin,
+.strategy {
   img {
     width: 500px;
     margin: 15px;
@@ -49,7 +50,8 @@
 
   .mission,
   .board,
-  .origin {
+  .origin,
+  .strategy {
       img {
         width: 100%;
         display: block;
