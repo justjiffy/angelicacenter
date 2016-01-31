@@ -26,6 +26,21 @@ p {
   font-size: 16px;
 }
 
+.carousel-caption p {
+  padding-top: 25px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.4;
+  font-style: italic;
+  text-shadow: 1px 1px 1px #000,
+               3px 3px 5px black;
+}
+
+.carousel-caption h1 {
+  text-shadow: 1px 1px 1px #000,
+               3px 3px 5px black;
+}
+
 h1,
 h2,
 h3,
@@ -82,5 +97,56 @@ footer a:active  {
 .jumbotron {
   background-color: #E3F8FD;
   border-radius: 15px;
-  text-shadow: 2px 2px 30px #468ba3
+  text-shadow: 2px 2px 30px #468ba3;
+  position: relative;
+  height: 150px;
+  z-index:-1
+}
+
+.jumbotron h1 {
+  position: relative;
+  z-index: 10;
+}
+
+.cloud {
+  position: absolute;
+  top: 25px;
+  width: 200px;
+  -webkit-animation: 100s infinite reverse clouds; /* Safari 4+ */
+  -moz-animation:    100s infinite reverse clouds; /* Fx 3+ */
+  -o-animation:      100s infinite reverse clouds; /* Opera 12+ */
+  animation:         100s infinite reverse clouds; /* IE 10+, Fx 29+ */
+}
+
+.cloud2 {
+  position: absolute;
+  top: 45px;
+  margin-left: -50px;
+  width: 300px;
+  -webkit-animation: 200s infinite clouds; /* Safari 4+ */
+  -moz-animation:    200s infinite clouds; /* Fx 5+ */
+  -o-animation:      200s infinite clouds; /* Opera 12+ */
+  animation:         200s infinite clouds; /* IE 10+, Fx 29+ */
+}
+
+
+@-webkit-keyframes clouds {
+  0%   { left: 50%; }
+  50% { left: 100%; }
+  100% { left: 0; }
+}
+@-moz-keyframes clouds {
+  0%   { left: 50%; }
+  50% { left: 100%; }
+  100% { left: 0%; }
+}
+@-o-keyframes clouds {
+  0%   { left: 50%; }
+  50% { left: 100%; }
+  100% { left: 0%; }
+}
+@keyframes clouds {
+  0%   { left: 50%; }
+  50% { left: 100%; }
+  100% { left: 0%; }
 }

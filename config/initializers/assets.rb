@@ -15,3 +15,5 @@ Rails.application.config.assets.version = '1.0'
 `Rails.application.config.assets.precompile += %w( carousel1.jpg )`
 `Rails.application.config.assets.precompile += %w( carousel2.jpg )`
 `Rails.application.config.assets.precompile += %w( carousel3.jpg )`
+`Rails.application.config.assets.precompile += %w( cloud.png )`
+`Rails.application.config.assets.precompile += %w( events.js )`

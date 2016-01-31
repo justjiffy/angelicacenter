@@ -10,6 +10,7 @@ class ProgramsController < ApplicationController
   end
 
   def events
+    @events = Event.all
   end
 
 end

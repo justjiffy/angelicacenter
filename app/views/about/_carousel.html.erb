@@ -15,7 +15,7 @@
        <div class="carousel-caption">
          <h1>Our students are confident.</h1>
          <p>“The most fun I have at ACAM is the performances because you get to show what you have learned and it is your time to shine."</p>
-         <h3><a class="btn btn-lg btn-success" href="#" role="button">Enroll Today!</a></h3>
+         <%= link_to ('<button class="btn btn-lg btn-success">ENROLL TODAY!</button>').html_safe, contact_path %>
        </div>
      </div>
    </div>
@@ -27,8 +27,8 @@
      <div class="container">
        <div class="carousel-caption">
          <h1>Our community thrives.</h1>
-         <p>“It gets the family together,there’s interaction betweenthe children, and loveand motivation in the children.”</p>
-         <h3><a class="btn btn-lg btn-success" href="#" role="button">Learn more</a></h3>
+         <p>“It gets the family together, there’s interaction between the children, and love and motivation in the children.”</p>
+         <%= link_to ('<button class="btn btn-lg btn-success">LEARN MORE</button>').html_safe, mission_path %>
        </div>
      </div>
    </div>
@@ -41,9 +41,9 @@
        <div class="carousel-caption">
          <h1>Get Involved!</h1>
          <p>Enroll, Donate, Volunteer, or Teach Today!</p>
-         <h3><a class="btn btn-lg btn-success" href="#" role="button">Enroll</a>
-         <a class="btn btn-lg btn-primary" href="#" role="button">Donate</a>
-         <a class="btn btn-lg btn-info" href="#" role="button">Volunteer</a></h3>
+        <%= link_to ('<button class="btn btn-lg btn-success">ENROLL</button>').html_safe, contact_path %>
+        <%= link_to ('<button class="btn btn-lg btn-primary">DONATE</button>').html_safe, donors_path %>
+        <%= link_to ('<button class="btn btn-lg btn-info">VOLUNTEER</button>').html_safe, contact_path %>
        </div>
      </div>
    </div>
