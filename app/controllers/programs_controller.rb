@@ -4,6 +4,7 @@ class ProgramsController < ApplicationController
   end
 
   def classes
+    @classes = Course.where(:active => true).all
   end
 
   def schedule

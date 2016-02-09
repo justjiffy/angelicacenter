@@ -19,11 +19,26 @@
    padding-top: 40px;
    padding-bottom: 0;
    margin-bottom: 0;
+
+   ::-webkit-scrollbar {
+       display: none;
+   }
  }
 
 p {
   font-family: 'Coming Soon', cursive;
   font-size: 16px;
+}
+
+.innerContainer {
+  height: 1000px;
+  position: relative;
+  overflow: scroll;
+
+  .donorlist {
+    padding-bottom: 10px;
+    text-align: center;
+  }
 }
 
 .carousel-caption p {
@@ -62,10 +77,6 @@ li {
 .field {
   padding-bottom: 25px;
 }
-footer p {
-  font-size: 12px;
-  line-height: 18px;
-}
 
 .navbar-inverse .navbar-nav>li>a,
 .navbar-inverse .navbar-nav>li>a:visited,
@@ -100,12 +111,14 @@ footer a:active  {
   text-shadow: 2px 2px 30px #468ba3;
   position: relative;
   height: 150px;
-  z-index:-1
-}
+  z-index:-1;
+  overflow: hidden;
 
-.jumbotron h1 {
-  position: relative;
-  z-index: 10;
+  h1 {
+    position: relative;
+    z-index: 10;
+  }
+
 }
 
 .cloud {
@@ -129,24 +142,49 @@ footer a:active  {
   animation:         200s infinite clouds; /* IE 10+, Fx 29+ */
 }
 
+footer {
+  height: 180px;
+  background: black;
+  color: white;
+  padding: 80px 15p 0 15px;
 
-@-webkit-keyframes clouds {
-  0%   { left: 50%; }
-  50% { left: 100%; }
-  100% { left: 0; }
+  .address {
+    padding:15px;
+    font-size: 14px;
+  }
+
+  p {
+    padding:15px;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
-@-moz-keyframes clouds {
-  0%   { left: 50%; }
-  50% { left: 100%; }
-  100% { left: 0%; }
-}
-@-o-keyframes clouds {
-  0%   { left: 50%; }
-  50% { left: 100%; }
-  100% { left: 0%; }
-}
-@keyframes clouds {
-  0%   { left: 50%; }
-  50% { left: 100%; }
-  100% { left: 0%; }
-}
+
+/* * * * * * * */
+/* ANIMATIONS * /
+/* * * * * * * */
+
+  @-webkit-keyframes clouds {
+    0%   { left: 50%; }
+    40% { left: 100% }
+    70% { left: 0; }
+    100% { left: 50%; }
+  }
+  @-moz-keyframes clouds {
+    0%   { left: 50%; }
+    40% { left: 100% }
+    70% { left: 0; }
+    100% { left: 50%; }
+  }
+  @-o-keyframes clouds {
+    0%   { left: 50%; }
+    40% { left: 100% }
+    70% { left: 0; }
+    100% { left: 50%; }
+  }
+  @keyframes clouds {
+    0%   { left: 50%; }
+    40% { left: 100% }
+    70% { left: 0; }
+    100% { left: 50%; }
+  }

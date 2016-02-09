@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160111051756) do
+ActiveRecord::Schema.define(version: 20160208044634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,19 @@ ActiveRecord::Schema.define(version: 20160111051756) do
     t.string   "img"
   end
 
+  create_table "courses", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "prereq"
+    t.boolean  "active"
+    t.datetime "days",        default: [],              array: true
+    t.datetime "times",                                 array: true
+    t.string   "image"
+    t.string   "instructor"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "donors", force: :cascade do |t|
     t.string   "name"
     t.string   "img"
@@ -37,8 +50,12 @@ ActiveRecord::Schema.define(version: 20160111051756) do
 
   create_table "events", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.text     "description"
+    t.integer  "instructor"
+    t.string   "days"
+    t.datetime "time"
   end
 
   create_table "faculties", force: :cascade do |t|

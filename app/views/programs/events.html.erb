@@ -2,8 +2,13 @@
     <h1>CALENDAR</h1>
 </div>
 
-<div id="calendar"></div>
+<div id="calendar" class="calendar innerContainer">
 
+    <div class="classes">
+
+    </div>
+
+</div>
 
 <script type="text/javascript">
 /**
@@ -152,7 +157,7 @@
             for (i=0; i < settings.events.length; i++) {
                 var d = settings.events[i].datetime;
                 if (d.getMonth() == dMonth && d.getFullYear() == dYear) {
-                    var date = lpad(d.getDate(), 2) + '/' + lpad(d.getMonth() + 1, 2) + ' ' + lpad(d.getHours(), 2) + ':' + lpad(d.getMinutes(), 2);
+                    var date = lpad(d.getMonth() + 1, 2) + '/' + lpad(d.getDate(), 2) + ' ' + lpad(d.getHours(), 2) + ':' + lpad(d.getMinutes(), 2);
                     var item = $('<div/>').addClass('c-event-item');
                     var title = $('<div/>').addClass('title').html(date + '  ' + settings.events[i].title + '<br/>');
                     var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>');
@@ -181,29 +186,16 @@
         weekDays: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
         months: ['January', 'Februay', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         textArrows: {previous: '<', next: '>'},
-        eventTitle: 'Details:',
+        eventTitle: '<h2>Upcoming Events:</h2>',
         url: '',
         events: [
             <% @events.each do |e| %>
-            {title: "<%= e.name %>", description: 'Abertura das Olimpiadas Rio 2016', datetime: new Date(2016, new Date().getMonth(), 12, 17)},
+            {title: "<%= e.name %>", description: "<%= e.description %>", datetime: new Date("<%= e.time %>") },
             <% end %>
         ]
     };
 }(jQuery));
 
-$(document).ready(function () {
-    $('#calendar').eCalendar();
-$('#calendar').eCalendar({url: 'loadCalendar'});
-
-$('#calendar').eCalendar({
-    events: [
-        {title: 'Event Title 1', description: 'Description 1', datetime: new Date(2016, 0, 12, 17)},
-        {title: 'Event Title 2', description: 'Description 2', datetime: new Date(2016, 0, 23, 16)}
-    ]
-});
-
-$('#calendar').eCalendar({url: 'loadCalendar',
-                          weekDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']});
-});
+$(document).ready(function () { $('#calendar').eCalendar(); });
 
 </script>

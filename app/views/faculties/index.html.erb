@@ -2,13 +2,13 @@
   <h1>Our Faculty</h1>
 </div>
 
-<table class="table">
+<table class="table innerContainer">
     <% @faculties.each do |faculty| %>
 
     <tr>
       <div class="col-sm-3">
         <%= image_tag(faculty.img, class: 'img-rounded img-responsive') %>
-     </div>
+      </div>
 
       <div class="col-sm-9">
           <h2><%= faculty.first_name %> <%= faculty.last_name %></h2>
@@ -28,5 +28,3 @@
     <% end %>
     </tr>
   </table>
-</div>
-

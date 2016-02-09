@@ -2,13 +2,11 @@
   <h1>Our Supporters</h1>
 </div>
 
-<p id="notice"><%= notice %></p>
-
-<div class="container">
+<div class="donors innerContainer">
   <% @donors.each do |d| %>
-    <div class="col-sm-6" style="padding-bottom: 10px;">
+    <div class="col-sm-6 donorlist">
       <% if d.img != "" %>
-        <%= link_to image_tag(d.img, class: "img-responsive") %>
+        <%= link_to image_tag(d.img, class: "img-responsive"), d %>
       <% else %>
         <%= d.name %>
       <% end %>
@@ -18,5 +16,4 @@
   <% if user_signed_in? %>
     <%= link_to 'New Donor', new_donor_path %>
   <% end %>
-
 </div>

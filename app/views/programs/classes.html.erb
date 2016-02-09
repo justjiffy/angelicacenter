@@ -1,3 +1,27 @@
 <div class="jumbotron">
   <h1>Class Offerings</h1>
 </div>
+
+<div class="classes innerContainer">
+  <% @classes.each do |c| %>
+    <div class="course-card row">
+      <div class="col-xs-4 col-lg-2">
+        <img src='<%if c.image != "" %><%= c.image %><% end %>' class="img-rounded img-responsive" />
+      </div>
+      <div class="col-xs-8 col-lg-10">
+        <h3><%= c.name %></h3>
+        <h4><%= c.days[0].strftime("%A") %>,
+          <% if c.days.length > 1 %>
+            <%= c.days[1].strftime("%A") %> -
+            <%= c.times[0].strftime("%l:%M") %> to <%= c.times[1].strftime("%l:%M%P") %>
+            <% end %>
+        </h4>
+        <h4>
+          Instructor: <%= c.instructor %>
+        </h4>
+        <p><%= c.description %></p>
+      </div>
+      <hr>
+    </div>
+  <% end %>
+</div>
