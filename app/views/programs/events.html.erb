@@ -4,10 +4,6 @@
 
 <div id="calendar" class="calendar innerContainer">
 
-    <div class="classes">
-
-    </div>
-
 </div>
 
 <script type="text/javascript">
@@ -19,6 +15,8 @@
 
 (function ($) {
 
+    var monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
     var eCalendar = function (options, object) {
         // Initializing global variables
         var adDay = new Date().getDate();
@@ -28,6 +26,7 @@
         var dMonth = adMonth;
         var dYear = adYear;
         var instance = object;
+
 
         var settings = $.extend({}, $.fn.eCalendar.defaults, options);
 
@@ -157,10 +156,12 @@
             for (i=0; i < settings.events.length; i++) {
                 var d = settings.events[i].datetime;
                 if (d.getMonth() == dMonth && d.getFullYear() == dYear) {
-                    var date = lpad(d.getMonth() + 1, 2) + '/' + lpad(d.getDate(), 2) + ' ' + lpad(d.getHours(), 2) + ':' + lpad(d.getMinutes(), 2);
+                    var months = monthList;
+                    var date = months[d.getMonth()] + ' ' +  d.getDate() + ' @ ' + d.getHours() + ':' + lpad(d.getMinutes(), 2) + (d.getHours() >= 12 ? 'pm' : 'am');
+;
                     var item = $('<div/>').addClass('c-event-item');
-                    var title = $('<div/>').addClass('title').html(date + '  ' + settings.events[i].title + '<br/>');
-                    var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>');
+                    var title = $('<div/>').addClass('title').html(settings.events[i].title + '<p>' + date + '</p>');
+                    var description = $('<div/>').addClass('description').html('<p>' + settings.events[i].description + '<p/>');
                     item.attr('data-event-day', d.getDate());
                     item.on('mouseover', mouseOverItem).on('mouseleave', mouseLeaveItem);
                     item.append(title).append(description);
@@ -184,9 +185,9 @@
     // plugin defaults
     $.fn.eCalendar.defaults = {
         weekDays: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
-        months: ['January', 'Februay', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        months: monthList,
         textArrows: {previous: '<', next: '>'},
-        eventTitle: '<h2>Upcoming Events:</h2>',
+        eventTitle: '<h2>MONTHLY EVENTS:</h2>',
         url: '',
         events: [
             <% @events.each do |e| %>

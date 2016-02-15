@@ -21,8 +21,8 @@ Post.create([
   ])
 
 Event.create([
-  {name: "Performance"},
-  {name: "Event"}
+  {name: "Performance", description: "Featuring the students of ACAM!", time: DateTime.parse("2016-02-12 20:00")},
+  {name: "Event", description: "Benefiting the students of ACAM!", time: DateTime.parse("2016-02-02 19:00")}
   ])
 
 Course.create([

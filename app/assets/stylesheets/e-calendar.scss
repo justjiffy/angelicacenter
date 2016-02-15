@@ -5,12 +5,11 @@
 
 .calendar  * {
     box-sizing: border-box;
-    font-size: 14px;
 }
 
 .calendar {
     cursor: default;
-    width: 100%;
+    width: 90%;
 }
 
 .height {
@@ -135,13 +134,18 @@
 
 .c-event-item > .title {
     font-weight: bold;
+    text-transform: none !important;
+
+    p {
+      font-size: 16px;
+      font-style: italic;
+    }
 }
 
 .c-event-item > div {
     text-overflow: ellipsis;
     width: inherit;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 .c-event-item {
