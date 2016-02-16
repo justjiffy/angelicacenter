@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
 Post.create([
   {title: "ACAM Welcomes New Board Members, Yuri and Kim!",
     body: "Yuri Batres is an eligibility worker for L. A. County Department of Public Social Services. Born in Mexico, he grew up in East L A and graduated UCLA in Latin American Studies. Kim Cameron has been involved in the arts her entire life, coming from a musical family that would sing and play together frequently. She sings in the church choir at St. Matthews.",
@@ -21,13 +22,13 @@ Post.create([
   ])
 
 Event.create([
-  {name: "Performance", description: "Featuring the students of ACAM!", time: DateTime.parse("2016-02-12 20:00")},
-  {name: "Event", description: "Benefiting the students of ACAM!", time: DateTime.parse("2016-02-02 19:00")}
+  {name: "Performance", description: "Featuring the students of ACAM!", image: "http://lorempixel.com/600/200/", time: DateTime.parse("2016-02-12 20:00")},
+  {name: "Event", description: "Benefiting the students of ACAM!", image: "http://lorempixel.com/600/200/abstract",time: DateTime.parse("2016-02-02 19:00")}
   ])
 
 Course.create([
   {name: "Flute", description: "Enter class description", prereq: "none", active: true, days: [DateTime.parse("02/02/2016 17:30"), DateTime.parse("02/04/2016 17:10")], times: [DateTime.parse("02/01/2016 17:30"), DateTime.parse("02/01/2016 18:10")], image: "http://lorempixel.com/150/150/abstract/", instructor: "Juli Emmel"},
-  {name: "Choir", description: "Enter class description", prereq: "none", active: true, days: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/03/2016 15:30")], times: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/01/2016 16:10")], image: "http://lorempixel.com/150/150/abstract/", instructor: "Ellen Sell"}
+  {name: "Choir", description: "Enter class description", prereq: "none", active: true, days: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/03/2016 15:30")], times: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/01/2016 16:10")], image: "http://lorempixel.com/150/150/", instructor: "Ellen Sell"}
   ])
 Faculty.create({
   first_name: "Ellen",

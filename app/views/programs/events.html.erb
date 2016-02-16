@@ -160,7 +160,7 @@
                     var date = months[d.getMonth()] + ' ' +  d.getDate() + ' @ ' + d.getHours() + ':' + lpad(d.getMinutes(), 2) + (d.getHours() >= 12 ? 'pm' : 'am');
 ;
                     var item = $('<div/>').addClass('c-event-item');
-                    var title = $('<div/>').addClass('title').html(settings.events[i].title + '<p>' + date + '</p>');
+                    var title = $('<div/>').addClass('title').html('<img class="img-rounded img-responsive" src="' + settings.events[i].image + '"" />' + settings.events[i].title + '<p>' + date + '</p>');
                     var description = $('<div/>').addClass('description').html('<p>' + settings.events[i].description + '<p/>');
                     item.attr('data-event-day', d.getDate());
                     item.on('mouseover', mouseOverItem).on('mouseleave', mouseLeaveItem);
@@ -187,11 +187,11 @@
         weekDays: ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'],
         months: monthList,
         textArrows: {previous: '<', next: '>'},
-        eventTitle: '<h2>MONTHLY EVENTS:</h2>',
+        eventTitle: '<h2>UPCOMING EVENTS:</h2>',
         url: '',
         events: [
             <% @events.each do |e| %>
-            {title: "<%= e.name %>", description: "<%= e.description %>", datetime: new Date("<%= e.time %>") },
+            {image: "<%= e.image %>", title: "<%= e.name %>", description: "<%= e.description %>", datetime: new Date("<%= e.time %>") },
             <% end %>
         ]
     };
