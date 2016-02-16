@@ -26,8 +26,8 @@ Event.create([
   ])
 
 Course.create([
-  {name: "Flute", description: "Enter class description", prereq: "none", active: true, days: [DateTime.parse("02/02/2016 17:30"), DateTime.parse("02/04/2016 17:10")], times: [DateTime.parse("02/01/2016 17:30"), DateTime.parse("02/01/2016 18:10")], image: "", instructor: "Juli Emmel"},
-  {name: "Choir", description: "Enter class description", prereq: "none", active: true, days: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/03/2016 15:30")], times: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/01/2016 16:10")], image: "", instructor: "Ellen Sell"}
+  {name: "Flute", description: "Enter class description", prereq: "none", active: true, days: [DateTime.parse("02/02/2016 17:30"), DateTime.parse("02/04/2016 17:10")], times: [DateTime.parse("02/01/2016 17:30"), DateTime.parse("02/01/2016 18:10")], image: "http://lorempixel.com/150/150/abstract/", instructor: "Juli Emmel"},
+  {name: "Choir", description: "Enter class description", prereq: "none", active: true, days: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/03/2016 15:30")], times: [DateTime.parse("02/01/2016 15:30"), DateTime.parse("02/01/2016 16:10")], image: "http://lorempixel.com/150/150/abstract/", instructor: "Ellen Sell"}
   ])
 Faculty.create({
   first_name: "Ellen",

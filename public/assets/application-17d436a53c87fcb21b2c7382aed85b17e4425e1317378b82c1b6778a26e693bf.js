@@ -11061,3 +11061,7 @@ return jQuery;
 
 
 
+
+$(function() {
+    $('.jumbotron').append('<img class="cloud" src="/assets/cloud-c78e53d4ce4f3c248dc3fb2cb168e2e13eb705049f8e38e8d5785a18a26c3574.png" alt="Cloud c78e53d4ce4f3c248dc3fb2cb168e2e13eb705049f8e38e8d5785a18a26c3574" /><img class="cloud2" src="/assets/cloud-c78e53d4ce4f3c248dc3fb2cb168e2e13eb705049f8e38e8d5785a18a26c3574.png" alt="Cloud c78e53d4ce4f3c248dc3fb2cb168e2e13eb705049f8e38e8d5785a18a26c3574" />');
+  });
