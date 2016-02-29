@@ -7,62 +7,50 @@
   margin: 15px;
   border-radius: 15px;
 }
-/* line 11, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
-.mission .accomplishments,
-.board .accomplishments,
-.origin .accomplishments,
-.strategy .accomplishments {
+
+/* line 12, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.accomplishments {
   text-align: center;
 }
-/* line 14, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
-.mission .accomplishments img,
-.board .accomplishments img,
-.origin .accomplishments img,
-.strategy .accomplishments img {
+/* line 15, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.accomplishments .acc-img {
   margin: 0 auto;
+  width: 100% !important;
+  max-width: 600px;
 }
-/* line 17, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
-.mission li,
-.board li,
-.origin li,
-.strategy li {
+/* line 21, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.accomplishments li {
   font-family: 'Coming Soon', cursive;
   text-transform: none;
   padding-bottom: 10px;
   line-height: 22px;
 }
-/* line 24, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
-.mission li:before,
-.board li:before,
-.origin li:before,
-.strategy li:before {
+/* line 28, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.accomplishments li:before {
   content: "\2605";
   font-size: 14px;
   margin-left: -25px;
   padding-left: 35px;
   padding-right: 8px;
 }
-/* line 32, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
-.mission ul,
-.board ul,
-.origin ul,
-.strategy ul {
+/* line 36, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.accomplishments ul {
   list-style: none;
 }
 
-/* line 37, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 41, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .green {
   color: white;
   background-color: green;
 }
 
-/* line 42, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 46, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .blue {
   color: white;
   background-color: blue;
 }
 
-/* line 47, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 51, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .purple {
   color: white;
   background-color: purple;
@@ -71,7 +59,7 @@
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (max-width: 768px) {
-  /* line 61, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+  /* line 65, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
   .mission img,
   .board img,
   .origin img,
@@ -531,7 +519,6 @@ form {
 
 /* line 28, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/programs.scss */
 img {
-  float: right;
   margin: 0 0 10px 0;
 }
 /*
