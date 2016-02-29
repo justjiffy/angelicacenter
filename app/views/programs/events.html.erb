@@ -155,9 +155,10 @@
             var eventList = $('<div/>').addClass('c-event-list');
             for (i=0; i < settings.events.length; i++) {
                 var d = settings.events[i].datetime;
+                var hour = d.getHours() + 7
                 if (d.getMonth() == dMonth && d.getFullYear() == dYear) {
                     var months = monthList;
-                    var date = months[d.getMonth()] + ' ' +  d.getDate() + ' @ ' + d.getHours() + ':' + lpad(d.getMinutes(), 2) + (d.getHours() >= 12 ? 'pm' : 'am');
+                    var date = months[d.getMonth()] + ' ' +  d.getDate() + ' @ ' + (hour > 12 ? hour-12 : hour) + ':' + lpad(d.getMinutes(), 2) + ( hour >= 12 ? 'pm' : 'am');
 ;
                     var item = $('<div/>').addClass('c-event-item');
                     var title = $('<div/>').addClass('title').html('<img class="img-rounded img-responsive" src="' + settings.events[i].image + '"" />' + settings.events[i].title + '<p>' + date + '</p>');

@@ -22,8 +22,8 @@ Post.create([
   ])
 
 Event.create([
-  {name: "Performance", description: "Featuring the students of ACAM!", image: "http://lorempixel.com/600/200/", time: DateTime.parse("2016-02-12 20:00")},
-  {name: "Event", description: "Benefiting the students of ACAM!", image: "http://lorempixel.com/600/200/abstract",time: DateTime.parse("2016-02-02 19:00")}
+  {name: "Sample Event", description: "Featuring the students of ACAM!", image: "https://docs.google.com/drawings/d/18SioDF2HzU69IG0s7gnvy9h-N9wI4i5sD-4l7E3YJ4U/pub?w=600&h=200", time: DateTime.parse("2016-02-12 20:00")},
+  {name: "St. Patrick's Family Night", description: "Join us for performances featuring the ACAM students along side food, games, prizes, friends and family! Tickets are $5 and all proceeds go directly to supporting our classes.", image: "https://docs.google.com/drawings/d/1pUVpplEQcHj_azUdz4e89rjbPNR7Qbrtq6vJJBxNFtY/pub?w=600&h=200",time: DateTime.parse("2016-03-18 17:00")}
   ])
 
 Course.create([
