@@ -1,3 +1,16 @@
 <div class="jumbotron">
-  <h1>Email Us!</h1>
+  <h1>Let's Connect</h1>
+</div>
+
+<div class="innerContainer container">
+  <form action="//formspree.io/justjiffy@gmail.com"
+      method="POST">
+    <div class="col-md-6 col-xs-12">Your Name: <input type="text" class="width" name="name"></div>
+    <div class="col-md-6 col-xs-12">Your Email: <input type="email" class="width" name="_replyto"></div>
+    <br><br>
+    <textarea name="message" style="width:100%" rows="10"> Your message. . . </textarea><br>
+    <input type="hidden" name="_next" value="<%= thanks_path %>" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" class="btn btn-success" style="padding: 10px 50px 5px 50px" value="Send">
+</form>
 </div>

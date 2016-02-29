@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   get 'contact' => 'contact#index'
   get 'address' => 'contact#address', as: :address
   get 'email' => 'contact#email', as: :email
+  get 'thanks' => 'contact#thanks', as: :thanks
 
   #ADMIN PANEL
   devise_scope :user do

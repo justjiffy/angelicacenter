@@ -25,11 +25,14 @@
 .c-grid {
     box-shadow: 2px 2px 5px #888888;
     height: inherit;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
 }
 .c-day {
     width: 14.28%;
     height: 13%;
-    background-color: #EFF4F9;
+    background-color: white;
     float: left;
     text-align: center;
 }
@@ -37,7 +40,7 @@
 .c-day-previous-month {
     width: 14.28%;
     height: 13%;
-    background-color: #F9FBFD;
+    background-color: #F1F1F1;
     float: left;
     text-align: center;
     color: gray;
@@ -46,7 +49,7 @@
 .c-day-next-month {
     width: 14.28%;
     height: 13%;
-    background-color: #F9FBFD;
+    background-color: #F1F1F1;
     float: left;
     text-align: center;
     color: gray;
@@ -93,21 +96,19 @@
 }
 
 .c-today {
-    background-color: #D8EAF1;
+    background-color: #FEFFA9;
 }
 
 .c-event {
-    background-color: rgb(166, 166, 166);
-    color: white;
+    background-color: rgba(127, 2, 150, 0.18);
+    color: black;
     font-weight: bold;
     cursor: pointer;
 }
 
-.c-grid {
-    float: left;
-}
-
 .c-event-grid {
+    margin: 0 auto;
+    text-align: center;
     h2 {
         font-size: 24px;
     }
@@ -117,7 +118,7 @@
     font-size: 24px;
     font-weight: bold;
     float: left;
-    background-color: rgb(112, 145, 183);
+    background-color: #7F0296;
     color: white;
     vertical-align: middle;
 }
@@ -158,7 +159,8 @@
 
 .c-event-item {
     padding-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
 }
 
 .c-event-over {

@@ -103,8 +103,8 @@
             var dLastDayOfMonth = new Date(dYear, dMonth + 1, 0).getDate();
             var dLastDayOfPreviousMonth = new Date(dYear, dMonth + 1, 0).getDate() - dWeekDayOfMonthStart + 1;
 
-            var cBody = $('<div/>').addClass('c-grid col-sm-6 col-lg-4').css('padding', 0).css('height', '270px');
-            var cEvents = $('<div/>').addClass('c-event-grid col-sm-6 col-lg-8').css('padding', '10px');
+            var cBody = $('<div/>').addClass('c-grid').css('padding', 0).css('height', '270px');
+            var cEvents = $('<div/>').addClass('c-event-grid col-md-12 col-lg-6').css('padding', '10px');
             var cEventsBody = $('<div/>').addClass('c-event-body');
             cEvents.append($('<div/>').html(settings.eventTitle));
             cEvents.append(cEventsBody);

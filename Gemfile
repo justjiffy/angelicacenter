@@ -56,3 +56,6 @@ gem 'devise'
 #for S3 storage
 gem 'aws-sdk', '~> 2'
 
+#constant contact
+gem 'constantcontact', '~> 2.2.0'
+
