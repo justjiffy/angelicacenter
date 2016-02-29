@@ -244,25 +244,28 @@
 /* line 8, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
 .contact h3 {
   margin: 0;
+  font-size: 22px;
+  font-family: "coming soon", cursive !important;
+  text-transform: none !important;
 }
-/* line 12, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+/* line 15, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
 .contact iframe {
   height: 100%;
   width: 100%;
   border: 0;
 }
 
-/* line 19, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+/* line 22, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 23, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+/* line 26, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
 .row {
   margin-bottom: 10px;
 }
 
-/* line 27, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+/* line 30, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
 .map-embed {
   width: 500px;
   max-width: 100%;
@@ -272,11 +275,27 @@
   margin: 0 auto;
 }
 
-/* line 36, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+/* line 39, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
 #display-google-map {
   height: 100%;
   width: 100%;
   max-width: 100%;
+}
+
+/* line 44, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+form {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 48, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+.width {
+  width: 70%;
+}
+
+/* line 51, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/contact.scss */
+.col-xs-12 {
+  margin-bottom: 25px;
 }
 /* line 1, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 #calendar {
@@ -310,38 +329,41 @@
 .c-grid {
   box-shadow: 2px 2px 5px #888888;
   height: inherit;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
 }
 
-/* line 29, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 32, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-day {
   width: 14.28%;
   height: 13%;
-  background-color: #EFF4F9;
+  background-color: white;
   float: left;
   text-align: center;
 }
 
-/* line 37, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 40, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-day-previous-month {
   width: 14.28%;
   height: 13%;
-  background-color: #F9FBFD;
+  background-color: #F1F1F1;
   float: left;
   text-align: center;
   color: gray;
 }
 
-/* line 46, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 49, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-day-next-month {
   width: 14.28%;
   height: 13%;
-  background-color: #F9FBFD;
+  background-color: #F1F1F1;
   float: left;
   text-align: center;
   color: gray;
 }
 
-/* line 55, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 58, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-week-day {
   width: 14.28%;
   height: 10.38%;
@@ -355,7 +377,7 @@
   padding-top: 1%;
 }
 
-/* line 68, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 71, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-next {
   width: 12.5%;
   height: 12%;
@@ -364,7 +386,7 @@
   cursor: pointer;
 }
 
-/* line 76, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 79, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-previous {
   width: 12.5%;
   height: 12%;
@@ -373,53 +395,53 @@
   cursor: pointer;
 }
 
-/* line 84, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 87, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-month {
   width: 75%;
   height: 12%;
   text-align: center;
 }
 
-/* line 90, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 93, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-nav-btn-over {
   background-color: #89a3c0 !important;
   font-weight: bold;
 }
 
-/* line 95, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 98, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-today {
-  background-color: #D8EAF1;
+  background-color: #FEFFA9;
 }
 
-/* line 99, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 102, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event {
-  background-color: #a6a6a6;
-  color: white;
+  background-color: rgba(127, 2, 150, 0.18);
+  color: black;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* line 106, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
-.c-grid {
-  float: left;
+/* line 109, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+.c-event-grid {
+  margin: 0 auto;
+  text-align: center;
 }
-
-/* line 111, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 112, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-grid h2 {
   font-size: 24px;
 }
 
-/* line 116, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 117, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-grid-title {
   font-size: 24px;
   font-weight: bold;
   float: left;
-  background-color: #7091b7;
+  background-color: #7F0296;
   color: white;
   vertical-align: middle;
 }
 
-/* line 125, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 126, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-title {
   text-align: center;
   font-weight: bold;
@@ -427,51 +449,52 @@
   color: white;
 }
 
-/* line 132, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 133, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-body {
   background-color: #fff;
   height: 88.1%;
 }
 
-/* line 137, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 138, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-list {
   padding: 7 0 0 0;
   overflow: auto;
   height: 95%;
 }
 
-/* line 143, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 144, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-item > .title {
   font-weight: bold;
   text-transform: none !important;
 }
-/* line 147, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 148, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-item > .title p {
   font-size: 16px;
   font-style: italic;
 }
 
-/* line 153, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 154, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-item > div {
   text-overflow: ellipsis;
   width: inherit;
   overflow: hidden;
 }
 
-/* line 159, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 160, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-item {
   padding-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
 }
 
-/* line 164, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 166, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-over {
   background-color: white;
   font-weight: bold;
   color: black;
 }
 
-/* line 170, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
+/* line 172, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/e-calendar.scss */
 .c-event-over > .description {
   font-weight: normal;
 }
