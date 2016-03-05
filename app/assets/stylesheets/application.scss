@@ -68,10 +68,19 @@ h6,
 .h4,
 .h5,
 .h6,
-a,
-li {
+a {
   font-family: 'Patrick Hand SC', cursive;
   text-transform: uppercase;
+}
+
+li {
+  text-transform: none;
+  font-family: 'Coming Soon', cursive;
+}
+
+.li-clash {
+  padding: 15px;
+  border-radius: 30px !important;
 }
 
 .field {
