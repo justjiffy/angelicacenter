@@ -4,7 +4,7 @@ class DonorsController < ApplicationController
   # GET /donors
   # GET /donors.json
   def index
-    @donors = Donor.all
+    @donors = Donor.all.order('img ASC').reorder('name ASC')
   end
 
   # GET /donors/1
