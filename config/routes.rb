@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :courses
   resources :donors, path: :donor
   resources :boards, path: :board
   resources :faculties, path: :faculty
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
 
   # PROGRAMS
   get 'programs' => 'programs#index'
-  get 'classes' => 'programs#classes', as: :class
+  get 'classes' => 'courses#index', as: :class
   get 'schedule' => 'programs#schedule', as: :schedule
   get 'events' => 'events#index'
 
