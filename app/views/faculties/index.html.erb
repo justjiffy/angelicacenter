@@ -2,12 +2,12 @@
   <h1>Our Faculty</h1>
 </div>
 
-<table class="table innerContainer">
+<table class="innerContainer">
     <% @faculties.each do |faculty| %>
 
-    <tr>
+    <div class="row">
       <div class="col-sm-3">
-        <%= image_tag(faculty.img, class: 'img-rounded img-responsive') %>
+        <%= image_tag(faculty.img, class: 'img-rounded img-responsive pull-right') %>
       </div>
 
       <div class="col-sm-9">
@@ -25,6 +25,6 @@
           <% end %>
           <!-- - - - - - - - -->
       </div>
+    </div>
     <% end %>
-    </tr>
-  </table>
+  </div>

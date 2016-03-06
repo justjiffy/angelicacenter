@@ -1,0 +1,6 @@
+LOG:  database system was shut down at 2016-03-04 16:38:25 PST
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  table "models" does not exist
+STATEMENT:  DROP TABLE "models"
