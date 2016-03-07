@@ -3,8 +3,13 @@
 </div>
 
 <div class="classes innerContainer">
-<%= link_to 'New Course', new_course_path %>
 
+  <!-- ADMIN FUNCTIONS -->
+  <% if user_signed_in? %>
+    <%= link_to 'New Course', new_course_path %>
+  <% end %>
+  <!-- - - - - - - - - -->
+  
   <% @classes.each do |c| %>
     <div class="course-card row">
       <div class="col-xs-4 col-lg-2">
