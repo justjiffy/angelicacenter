@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :days %><br>
-    <%= f.text_area :days %>
+    <%= f.check_box(:days, { :multiple => true }, Date::DAYNAMES, nil) %>
   </div>
   <div class="field">
     <%= f.label :times %><br>
