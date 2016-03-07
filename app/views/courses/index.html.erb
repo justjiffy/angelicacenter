@@ -12,7 +12,7 @@
       </div>
       <div class="col-xs-8 col-lg-10">
         <h3><%= c.name %></h3>
-        <h4>
+        <h4 style="display: none;">
           <% if c.days.length > 0 %>
             <%= c.days[0].strftime("%A") %>
           <% end %>
