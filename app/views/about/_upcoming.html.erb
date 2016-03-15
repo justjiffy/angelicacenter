@@ -1,45 +1,28 @@
 <div class="container">
 
-<h2>Upcoming Events
+<h2>Learn more about our...
 <% if user_signed_in? %>
   <%= link_to ('<span class="glyphicon glyphicon-plus-sign"></span>').html_safe, new_event_path %>
   <% end %>
 </h2>
 
 <div class="row">
-  <div class="col-lg-4 col-md-6">
+  <div class="col-md-4 col-sm-12">
     <div class="panel">
-      <div class="panel-heading green">
-        <h3 class="panel-title">Classes</h3>
-      </div>
-      <div class="panel-body">
-        Panel content: <% @events.each do |e| %>
-                        <%= e.name %>
-                        <% end %>
-      </div>
+     <%= link_to ('<div class="panel-heading green">Classes</div>').html_safe, class_path %>
     </div>
-  </div><!-- /.col-lg-4 col-md-6 -->
+  </div>
 
-  <div class="col-lg-4 col-md-6">
-   <div class="panel">
-     <div class="panel-heading blue">
-       <h3 class="panel-title">Performances</h3>
-     </div>
-     <div class="panel-body">
-       Panel content
-     </div>
-   </div>
-  </div><!-- /.col-lg-4 col-md-6 -->
-
-  <div class="col-lg-4 col-md-6">
+  <div class="col-md-4 col-sm-12">
     <div class="panel">
-      <div class="panel-heading purple">
-        <h3 class="panel-title">Community Events</h3>
-      </div>
-      <div class="panel-body">
-        Panel content
-      </div>
+     <%= link_to ('<div class="panel-heading blue">Performances</div>').html_safe, calendar_path %>
     </div>
-  </div><!-- /.col-lg-4 col-md-6 -->
+  </div>
+
+  <div class="col-md-4 col-sm-12">
+    <div class="panel">
+     <%= link_to ('<div class="panel-heading purple">Community Events</div>').html_safe, calendar_path %>
+    </div>
+  </div>
 </div>
 </div>
