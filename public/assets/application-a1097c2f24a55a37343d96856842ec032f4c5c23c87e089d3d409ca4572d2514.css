@@ -828,6 +828,7 @@ footer p {
   border: none;
   transform: scale(1.5) translate(12.5%, 90px);
   margin: 0 auto;
+  width: 100%;
   height: 1200px;
 }
 
@@ -891,16 +892,17 @@ footer p {
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 221, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
+  /* line 222, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
   .schedule-embed {
     border: none;
     transform: scale(1.25) translate(6.25%, 40px);
     margin: 0 auto;
+    width: 100%;
     height: 1200px;
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 229, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
+  /* line 231, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
   .schedule-embed {
     border: none;
     transform: scale(0.75) translate(-25%, -250px);
