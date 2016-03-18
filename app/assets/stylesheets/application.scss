@@ -104,6 +104,12 @@ footer a:active  {
 .panel-heading {
   text-align: center;
   border-radius: 5px;
+  font-size: 26px;
+  padding: 20px 0;
+  text-decoration: none !important;
+}
+.panel a {
+  text-decoration: none !important;
 }
 
 .panel-title{

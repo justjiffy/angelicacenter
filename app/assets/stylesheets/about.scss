@@ -41,18 +41,28 @@
 .green {
   color: white;
   background-color: green;
+
 }
+  .green:hover {
+    background-color: #3aaf36;
+  }
 
 .blue {
   color: white;
-  background-color: blue;
+  background-color: #1c23a8;
+}
+
+.blue:hover {
+  background-color: #2773f7;
 }
 
 .purple {
   color: white;
   background-color: purple;
 }
-
+.purple:hover {
+  background-color: #b54fb5;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

@@ -45,21 +45,36 @@
 }
 
 /* line 46, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
-.blue {
-  color: white;
-  background-color: blue;
+.green:hover {
+  background-color: #3aaf36;
 }
 
-/* line 51, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+/* line 50, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.blue {
+  color: white;
+  background-color: #1c23a8;
+}
+
+/* line 55, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.blue:hover {
+  background-color: #2773f7;
+}
+
+/* line 59, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
 .purple {
   color: white;
   background-color: purple;
 }
 
+/* line 63, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+.purple:hover {
+  background-color: #b54fb5;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (max-width: 768px) {
-  /* line 65, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
+  /* line 75, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/about.scss */
   .mission img,
   .board img,
   .origin img,
@@ -717,19 +732,27 @@ footer a:active {
 .panel-heading {
   text-align: center;
   border-radius: 5px;
+  font-size: 26px;
+  padding: 20px 0;
+  text-decoration: none !important;
 }
 
-/* line 110, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 112, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+.panel a {
+  text-decoration: none !important;
+}
+
+/* line 116, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .panel-title {
   font-size: 26px;
 }
 
-/* line 114, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 120, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .dropdown-menu > li > a:hover {
   background-color: #ffe493;
 }
 
-/* line 118, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 124, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .jumbotron {
   background-color: #E3F8FD;
   border-radius: 15px;
@@ -739,13 +762,13 @@ footer a:active {
   z-index: -1;
   overflow: hidden;
 }
-/* line 127, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 133, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .jumbotron h1 {
   position: relative;
   z-index: 10;
 }
 
-/* line 134, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 140, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .cloud {
   position: absolute;
   top: 25px;
@@ -760,7 +783,7 @@ footer a:active {
   /* IE 10+, Fx 29+ */
 }
 
-/* line 144, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 150, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 .cloud2 {
   position: absolute;
   top: 45px;
@@ -776,19 +799,19 @@ footer a:active {
   /* IE 10+, Fx 29+ */
 }
 
-/* line 155, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 161, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 footer {
   height: 180px;
   background: black;
   color: white;
   padding: 80px 15p 0 15px;
 }
-/* line 161, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 167, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 footer .address {
   padding: 15px;
   font-size: 14px;
 }
-/* line 166, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
+/* line 172, /Users/Juli/Documents/Work/ACAM/acam_rails/app/assets/stylesheets/application.scss */
 footer p {
   padding: 15px;
   font-size: 12px;
