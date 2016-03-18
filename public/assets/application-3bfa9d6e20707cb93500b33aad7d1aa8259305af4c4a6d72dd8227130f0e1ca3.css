@@ -572,7 +572,7 @@ a:visited {
 /* line 28, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/scaffolds.scss */
 a:hover {
   color: #fff;
-  background-color: #000;
+  background-color: transparent;
 }
 
 /* line 35, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/scaffolds.scss */
