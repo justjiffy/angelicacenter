@@ -166,7 +166,7 @@ footer {
   height: 180px;
   background: black;
   color: white;
-  padding: 80px 15p 0 15px;
+  padding: 80px 15px 0 15px;
 
   .address {
     padding:15px;
@@ -178,6 +178,13 @@ footer {
     font-size: 12px;
     line-height: 18px;
   }
+}
+
+.schedule-embed {
+  border: none; 
+  transform: scale(1.5) translate(12.5%, 90px); 
+  margin: 0 auto; 
+  height: 1200px; 
 }
 
 /* * * * * * * */
@@ -208,3 +215,22 @@ footer {
     70% { left: 0; }
     100% { left: 50%; }
   }
+
+@media screen and (max-width : 1200px) {
+  .schedule-embed {
+    border: none;
+    transform: scale(1.25) translate(6.25%, 40px); 
+    margin: 0 auto;
+    height: 1200px; 
+  }
+}
+@media screen and (max-width : 680px) {
+  .schedule-embed {
+    border: none;
+    transform: scale(0.75) translate(-25%, -250px); 
+    margin: 0 auto;
+    height: 1200px; 
+    width: 125%;
+  }
+}
+
