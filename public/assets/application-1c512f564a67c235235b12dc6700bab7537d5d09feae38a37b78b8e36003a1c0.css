@@ -809,7 +809,7 @@ footer {
   height: 180px;
   background: black;
   color: white;
-  padding: 80px 15p 0 15px;
+  padding: 80px 15px 0 15px;
 }
 /* line 172, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
 footer .address {
@@ -821,6 +821,14 @@ footer p {
   padding: 15px;
   font-size: 12px;
   line-height: 18px;
+}
+
+/* line 184, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
+.schedule-embed {
+  border: none;
+  transform: scale(1.5) translate(12.5%, 90px);
+  margin: 0 auto;
+  height: 1200px;
 }
 
 /* * * * * * * */
@@ -880,5 +888,24 @@ footer p {
   }
   100% {
     left: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* line 221, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
+  .schedule-embed {
+    border: none;
+    transform: scale(1.25) translate(6.25%, 40px);
+    margin: 0 auto;
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 680px) {
+  /* line 229, /Users/a1060user/Desktop/ACAM/app/assets/stylesheets/application.scss */
+  .schedule-embed {
+    border: none;
+    transform: scale(0.75) translate(-25%, -250px);
+    margin: 0 auto;
+    height: 1200px;
+    width: 125%;
   }
 }
