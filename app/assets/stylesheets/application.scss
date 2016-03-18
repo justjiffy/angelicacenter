@@ -15,7 +15,7 @@
  */
 
  body {
-   font-family: 'Coming Soon', cursive;
+   font-family: 'Didact Gothic', sans-serif;
    padding-top: 40px;
    padding-bottom: 0;
    margin-bottom: 0;
@@ -26,8 +26,10 @@
  }
 
 p {
-  font-family: 'Coming Soon', cursive;
-  font-size: 16px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 21px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
 }
 
 .innerContainer {
@@ -75,7 +77,10 @@ a {
 
 li {
   text-transform: none;
-  font-family: 'Coming Soon', cursive;
+  letter-spacing: 0.4px;
+  font-size: 19px;
+  line-height: 20px;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .li-clash {
